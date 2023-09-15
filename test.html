@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health and Depression Quiz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto+Condensed:wght@700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+            margin: 20px;
+            background-image: url(hackathon\ champion.jpg);
+            
+            background-position: center;
+            background-repeat: repeat-x;
+            background-color: white;
+        }
+        h1 {
+            text-align: center;
+            color: brown;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .btnn{
+            background-color: antiquewhite;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mental Health and Depression Quiz</h1>
+<br>
+<br>
+<br>
+    <div class="quiz-container">
+        <form action="quiz-result.php" method="post">
+            <div class="question">
+                1. What is depression?
+            </div>
+            <br>
+            <div class="options">
+                <label><input type="radio" name="question1" value="a">a) A state of mind </label>
+                <label><input type="radio" name="question1" value="b">b) A medical condition characterized by persistent sadness and loss of interest</label>
+                <label><input type="radio" name="question1" value="c">c) A type of happiness</label>
+            </div>
+            <br>
+            <br>
+
+            <div class="question">
+                2. How can one seek help for depression?
+            </div>
+            <br>
+            <div class="options">
+                <label><input type="radio" name="question2" value="a">a) Ignoring it</label>
+                <label><input type="radio" name="question2" value="b">b) Talking to a mental health professional</label>
+                <label><input type="radio" name="question2" value="c">c) Keeping it to oneself</label>
+            </div>
+            <br>
+            <br>
+
+            <button class="btnn" type="submit"> <a href="index.html" class="next" >Submit</a></button>
+        </form>
+    </div>
+</body>
+</html>

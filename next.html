@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health and Depression Questions</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto+Condensed:wght@700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+            margin: 20px;
+            background-image: url(mail.avif);
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        .question-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .question-label {
+            font-weight: bold;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: bisque;
+            border: 1px solid antiquewhite;
+            border-radius: 10px;
+            color: black;
+        }
+        .form-textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: bisque;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            resize: vertical;
+        }
+        .submit-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .submit-button:hover{
+            background-color: #ddd;
+  color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mental Health and Depression Questions</h1>
+
+    <div class="question-form">
+        <form action="submit.php" method="post">
+            <div class="question-label">Your Name:</div>
+            <br>
+            <input type="text" class="form-input" name="name" required>
+
+            <div class="question-label">Email Address:</div>
+            <br>
+            <input type="email" class="form-input" name="email" required>
+
+            <div class="question-label">Question:</div>
+            <br>
+            <textarea class="form-textarea" name="question" rows="4" required></textarea>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
